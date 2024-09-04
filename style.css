@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background-color: #f5f5fa;
+  min-width: 1024px !important;
+  height: 100vh;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.body-container {
+  padding: 50px 0;
+  position: relative;
+}
+
+.nav-link {
+  padding: 1rem !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #7878aa !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: #7878aa !important;
+  border-radius: 0;
+}
+
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 128px;
+  margin: -50px 0;
+  background-color: #f5f5fa;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+
+.menu button i {
+  font-size: 24px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.content .content-stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.content .content-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: solid 2px #dbdbe8;
+}
+
+.content .content-background .content-time .hours-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #7878aa;
+  font-family: fantasy;
+  font-size: 64px;
+}
+
+.content .content-background .content-time .hours-group .time {
+  width: 208px;
+}
+
+.content .content-background .content-time .hours-group .date {
+  color: #7878aa;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.content .content-stopwatch .content-background .content-icon {
+  width: 100px;
+  height: 24px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  rotate: 40deg;
+  border-radius: 50px;
+  border: solid 2px #dbdbe8;
+}
+
+.content-icon::after {
+  content: "";
+  background: #7878aa;
+  width: 80px;
+  height: 14px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -5px 15px;
+}
+
+.content .content-background .content-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5fa;
+  width: 370px;
+  height: 370px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  border: solid 2px #dbdbe8;
+}
+
+.content .content-stopwatch .content-background .content-time .stopwatch {
+  display: flex;
+  gap: 4px;
+  color: #7878aa;
+  font-family: fantasy;
+  font-size: 64px;
+}
+
+.content
+  .content-stopwatch
+  .content-background
+  .content-time
+  .stopwatch
+  .seconds {
+  color: #9898be;
+  text-align: end;
+}
+
+.content .content-stopwatch .content-background .content-time .reset {
+  position: absolute;
+  bottom: 42px;
+  font-family: monospace;
+  font-size: 24px;
+  color: #737375;
+  cursor: pointer;
+}
+
+.content ol {
+  margin: 0;
+}
+
+.content ol li {
+  color: #7878aa;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.content .button-group {
+  display: flex;
+  gap: 64px;
+}
+
+.content .button-group .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #7878ab;
+  box-shadow: #7878ab 0px 0px 15px;
+  border: none;
+}
